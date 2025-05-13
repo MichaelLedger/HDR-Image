@@ -26,7 +26,7 @@ static func isImageHDR(image: UIImage) -> Bool {
     return image.isHighDynamicRange
 }
 
-// For iOS 17+ devices, you can check if color space uses ITU-R 2100 transfer functions
+// For iOS 14+ devices, you can check if color space uses ITU-R 2100 transfer functions
 @available(iOS 14.0, *)
 static func isImageHDRV2(image: UIImage) -> Bool {
     guard let cgImage = image.cgImage else { return false }
